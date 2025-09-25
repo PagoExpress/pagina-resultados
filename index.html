@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resultados del Informe</title>
+  <title>Resultados de Llamadas vs Tickets Services Desk</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
@@ -13,16 +13,18 @@
 <body>
   <header>
     <h1>Resultados del Informe</h1>
-    <p>Fecha: 23 de septiembre de 2025</p>
+    <p>Fecha: 24 de septiembre de 2025</p>
   </header>
 
   <section class="filters">
-    <h2>Filtrar Resultados</h2>
-    <label for="agentFilter">Agente:</label>
+    <h2>Filtrar AST</h2>
+    <label for="agentFilter">AST:</label>
     <select id="agentFilter" onchange="filterTable()">
       <option value="">Todos</option>
-      <option value="Ana López">Ana López</option>
-      <option value="Carlos Ruiz">Carlos Ruiz</option>
+      <option value="Juan Carlos Flores Tlachino">Juan Carlos Flores Tlachino</option>
+      <option value="Stephanie Vazquez Barona">Stephanie Vazquez Barona</option>
+      <option value="Eduardo Perez Zamora">Eduardo Perez Zamora</option>
+      <option value="Jesus Miguel Fuentes Quecholac">Jesus Miguel Fuentes Quecholac</option>
     </select>
 
     <label for="satisfactionFilter">Satisfacción mínima:</label>
@@ -37,23 +39,35 @@
       <thead>
         <tr>
           <th>Agente</th>
-          <th>Casos</th>
-          <th>Satisfacción</th>
-          <th>Tiempo Promedio</th>
+          <th>Llamadas</th>
+          <th>Tickets</th>
+          <th>Porcentaje</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Juan Carlos Tlachino</td>
+          <td>Juan Carlos Flores Tlachino</td>
           <td>320</td>
-          <td>95</td>
-          <td>2h 45min</td>
+          <td>300</td>
+          <td>95%</td>
         </tr>
         <tr>
-          <td>Stephani Barona</td>
+          <td>Stephanie Vazquez Barona</td>
           <td>280</td>
-          <td>89</td>
-          <td>3h 10min</td>
+          <td>200</td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td>Jesus Miguel Fuentes Quecholac</td>
+          <td>280</td>
+          <td>200</td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td>Eduardo Perez Zamora</td>
+          <td>280</td>
+          <td>200</td>
+          <td>80%</td>
         </tr>
       </tbody>
     </table>
