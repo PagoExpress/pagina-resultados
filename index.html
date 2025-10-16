@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -278,7 +277,7 @@
   </section>
 
   <section class="charts">
-    <h2>Gráficas de Desempeño</h2>
+    <h2>Desempeño en Calidad</h2>
     <canvas id="barChart"></canvas>
     <button onclick="downloadChart('barChart', 'grafica_barras')">Descargar Gráfica de Barras</button>
 
@@ -350,7 +349,7 @@
         labels: ['Alfredo Alvarez Gonzalez', 'Jefferson David Monroy Culajay', 'Marco Antonio Ramirez Salazar', 'Gabriel Yarce Ceron', 'Claudia Perez Rodas', 'Cristian Sanchez Sandoval', 'Jose Miguel Dominguez Nieto', 'Juan Pablo Leon Ayala', 'Edwin Ortega Martinez', 'Alan Nieto Cortes', 'Juan Carlos Rojas Lopez', 'Lorena Vianey Perez Rubio', 'Jorge Nicolas Salas Garcia', 'Francisco Israel Baldeon Cerrillo', 'Jorge Pedro Flores Velazco', 'Carlos David Garrido Gomez', 'Daniel Luna Carcamo', 'Jesus Eduardo del Valle Lopez', 'Ivan Benito Angulo Vazquez', 'Christian Porras Brito', 'Carlos Roberto Mendez Franco', 'Victoria Eleny Sanchez Solis', 'Kenneth Taracena', 'Juan Ricardo Sanchez Martinez', 'Jesus Moreno Paez', 'Julio Rolando Silva Diaz', 'Edwin Ernesto Estupinian Monzon', 'Jhonatan Enrique Rosas Rodriguez', 'Jose Pablo Ibarra Chigua', 'Luis Antonio Poz Mejia'],
         datasets: [{
           label: 'Porcentajes Obtenidos',
-          data: [400, 250, 108, 106, 101, 101, 100, 100, 99, 99, 99, 98, 98, 96, 96, 95, 95, 90, 81, 76, 75, 74, 67, 66, 64, 61, 54, 42, 34, 20],
+          data: [0, 90, 81, 86, 0, 84, 79, 83, 87, 0, 92, 94, 92, 0, 81, 82, 97, 89, 91, 93, 83, 93, 0, 93, 74, 79, 0, 64, 94, 82],
           backgroundColor: '#003366'
         }]
       },
@@ -358,7 +357,7 @@
         responsive: true,
         plugins: {
           legend: { display: false },
-          title: { display: true, text: 'Casos por Agente' }
+          title: { display: true, text: 'Porcentaje por Agente' }
         }
       }
     });
